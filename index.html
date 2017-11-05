@@ -26,8 +26,27 @@
 		</header>
 	
 		<main class="container">
-         <h1>Крем-брюле и пломбир с малиновым джемом</h1>			 
-			<!--			 Слайдер-->
+         
+         <section>
+            <h1 visually-hidden>Фон</h1>
+            <div class="slider">
+               <div class="slider-inner">
+                  <div class="slider-slides">
+                     <img src="background-1.jpg" alt="Крем-брюле и пломбир с малиновым джемом">
+                     <img src="background-2.jpg" alt="Шоколадный пломбир и лемонный сорбет">
+                     <img src="background-3.jpg" alt="Пломбир с помадкой и клубничный щербет">
+                  </div>
+               </div>
+               <input type="radio" id="btn-1" name="toggle" checked>
+               <input type="radio" id="btn-2" name="toggle">
+               <input type="radio" id="btn-3" name="toggle">
+               <div class="slider-controls">
+                  <label for="btn-1"></label>
+                  <label for="btn-2"></label>
+                  <label for="btn-3"></label>
+               </div>
+            </div>
+        </section>
 			 
 			<section class="present">
             <h1 class="visually-hidden">Подарки</h1>
@@ -50,22 +69,22 @@
             <ul class="hits-list">
                <li>
                   <a class="hits-item" href="#"><img src="icecream-hit-1.jpg"></a>
-                  <p class="hits-price">310р<span class="hits-weight">/кг</span></p>
+                  <p class="hits-price">310<span class="visually-hidden">рублей</span><span class="hits-weight">/кг</span></p>
                   <p class="hits-description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
                </li>
                <li>
                   <a class="hits-item" href="#"><img src="icecream-hit-2.jpg"></a>
-                  <p class="hits-price">380р<span class="hits-weight">/кг</span></p>
+                  <p class="hits-price">380<span class="visually-hidden">рублей</span><span class="hits-weight">/кг</span></p>
                   <p class="hits-description">Сливочно-кофейное с кусочками шоколада</p>
                </li>
                <li>
                   <a class="hits-item" href="#"><img src="icecream-hit-3.jpg"></a>
-                  <p class="hits-price">355р<span class="hits-weight">/кг</span></p>
+                  <p class="hits-price">355<span class="visually-hidden">рублей</span><span class="hits-weight">/кг</span></p>
                   <p class="hits-description">Сливочно-клубничное с присыпкой из белого шоколада</p>
                </li>
                <li>
                   <a class="hits-item" href="#"><img src="icecream-hit-4.jpg"></a>
-                  <p class="hits-price">415р<span class="hits-weight">/кг</span></p>
+                  <p class="hits-price">415<span class="visually-hidden">рублей</span><span class="hits-weight">/кг</span></p>
                   <p class="hits-description">Сливочное крем-брюле с карамельной подливкой</p>
                </li>
             </ul>
@@ -124,5 +143,23 @@
 				<p>Сделано в HTML Academy 2017</p>
 			</div>
 		</footer>
+      
+      <section class="search">
+         <!--  Форма    -->
+      </section>
+      
+      <section class="enter">
+         <!--  Форма    -->
+         <a class="button" href="#"></a>
+         <a href="#">Забыли пароль?</a>
+         <a href="#">Новая регистрация</a>
+      </section>
+      
+      <section class="feedback">
+         <b>Мы обязательно вам ответим!</b>
+         <!--  Форма    -->
+         <button>Отправить</button>
+      </section>
+      
 	</body>
 </html>

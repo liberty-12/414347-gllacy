@@ -17,13 +17,13 @@
 				</ul>
 				<div class="search">
                <a classs="search-link" href="#">Поиск</a>
-               <form class="search-form" method="get" action="">
+               <form class="search-form" method="post" action="#">
                   <input type="search" name="search" placeholder="Что ищем?">
                </form>
             </div>
             <div class="enter">
                <a class="enter-link" href="#">Вход</a>
-               <form class="enter-form">
+               <form class="enter-form" method="post" action="#">
                   <input type="email" name="enter-email" placeholder="Электронная почта">
                   <input type="password" name="password" placeholder="Пароль">
                   <button type="submit">Войти</button>
@@ -83,7 +83,7 @@
          
          <h1>Сливочное мороженое</h1>
          
-         <form class="filter" method="get" action="">
+         <form class="filter" method="post" action="#">
             <label for="sort">Сортировка:</label>
             <select class="filter-select" name="sort" id="sort">
                <option value="По популярности" selected>По популярности</option>

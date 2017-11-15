@@ -26,13 +26,13 @@
             </ul>
             <div class="search">
                <a classs="search-link" href="#">Поиск</a>
-               <form class="search-form" method="get" action="">
+               <form class="search-form" method="post" action="#">
                   <input type="search" name="search" placeholder="Что ищем?">
                </form>
             </div>
             <div class="enter">
                <a class="enter-link" href="#">Вход</a>
-               <form class="enter-form">
+               <form class="enter-form" method="post" action="#">
                   <input type="email" name="enter-email" placeholder="Электронная почта">
                   <input type="password" name="password" placeholder="Пароль">
                   <button type="submit">Войти</button>
@@ -142,7 +142,7 @@
          <section class="email">
             <h1 class="visually-hidden">Подписка</h1>
             <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-            <form class="email-form" method="get" action="">
+            <form class="email-form" method="post" action="#">
                <input type="email" name="subscribe-email" placeholder="Электронная почта">
                <button type="submit">Отправить</button>
             </form>
@@ -201,7 +201,7 @@
       
       <section class="feedback">
          <b>Мы обязательно вам ответим!</b>
-         <form class="feedback-form" method="get" action="">
+         <form class="feedback-form" method="post" action="#">
             <input type="text" name="user-name" placeholder="Как вас зовут?">
             <input type="email" name="feedback-email" placeholder="Ваша почта для ответа?">
             <textarea name="comment">Напишите что-нибудь...</textarea>

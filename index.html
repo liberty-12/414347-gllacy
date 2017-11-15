@@ -4,22 +4,43 @@
 		<meta charset="utf-8">
 		<title>HTML Academy: Глейси</title>
 	</head>
-	<body bgcolor="#849d8f">
+	<body>
 		<header class="main-header">
          <nav class="main-navigation">
             <a class="main-header-logo">
                <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина 'Gllacy'">	
             </a>
             <ul class="site-navigation">
-               <li><a href="catalog.html">Каталог</a></li>
+               <li>
+                  <a href="#">Каталог</a>
+                  <ul>
+                     <li><a href="#">Новинки</a></li>
+                     <li><a href="catalog.html">Сливочное</a></li>
+                     <li><a href="#">Щербеты</a></li>
+                     <li><a href="#">Фруктовый лед</a></li>
+                     <li><a href="#">Мелорин</a></li>
+                   </ul>
+               </li>
                <li><a href="shipping-payment.html">Доставка и оплата</a></li>
                <li><a href="about.html">О Компании</a></li>
             </ul>
-            <div class="user-navigation">
+            <div class="search">
+               <a classs="search-link" href="#">Поиск</a>
                <form class="search-form" method="get" action="">
                   <input type="search" name="search" placeholder="Что ищем?">
                </form>
-               <a class="login-link" href="#">Вход</a>
+            </div>
+            <div class="enter">
+               <a class="enter-link" href="#">Вход</a>
+               <form class="enter-form">
+                  <input type="email" name="enter-email" placeholder="Электронная почта">
+                  <input type="password" name="password" placeholder="Пароль">
+                  <button type="submit">Войти</button>
+               </form>
+               <a href="#">Забыли пароль?</a>
+               <a href="#">Новая регистрация</a>
+            </div>
+            <div>
                <a class="shopping-cart-link" href="#">Корзина</a>
             </div>
          </nav>
@@ -136,7 +157,7 @@
             <p>
                Адрес главного офиса<br>
                и офлайн-магазина:<br>
-               <b>ул.Большая онюшенная<br>
+               <b>ул.Большая Конюшенная<br>
                19/8, Санкт-Петербург</b>
             </p>
             <p>
@@ -170,7 +191,7 @@
 			</section>
 
 			<div class="footer-copyright">
-				<a class="html-academy-logo" href="https://htmlacademy.ru">
+				<a class="html-academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
                
 					<img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy">
 				</a>
@@ -178,22 +199,12 @@
 			</div>
 		</footer>
       
-      <section class="enter">
-         <form class="enter-form">
-            <input type="email" name="enter-email" placeholder="Электронная почта">
-            <input type="password" name="password" placeholder="Пароль">
-            <a class="button" href="#">Войти</a>
-         </form>
-         <a href="#">Забыли пароль?</a>
-         <a href="#">Новая регистрация</a>
-      </section>
-      
       <section class="feedback">
          <b>Мы обязательно вам ответим!</b>
          <form class="feedback-form" method="get" action="">
             <input type="text" name="user-name" placeholder="Как вас зовут?">
             <input type="email" name="feedback-email" placeholder="Ваша почта для ответа?">
-            <text-area name="comment">Напишите что-нибудь...</text-area>
+            <textarea name="comment">Напишите что-нибудь...</textarea>
          </form>
       </section>
       

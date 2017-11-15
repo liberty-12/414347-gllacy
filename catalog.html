@@ -15,13 +15,55 @@
 					<li><a href="shipping-payment.html">Доставка и оплата</a></li>
 					<li><a href="about.html">О Компании</a></li>
 				</ul>
-				<div class="user-navigation">
-					<form class="search-form" method="get" action="">
+				<div class="search">
+               <a classs="search-link" href="#">Поиск</a>
+               <form class="search-form" method="get" action="">
                   <input type="search" name="search" placeholder="Что ищем?">
                </form>
-					<a class="login-link" href="#">Вход</a>
-					<a class="shopping-cart-link" href="#">Корзина</a>
-				</div>
+            </div>
+            <div class="enter">
+               <a class="enter-link" href="#">Вход</a>
+               <form class="enter-form">
+                  <input type="email" name="enter-email" placeholder="Электронная почта">
+                  <input type="password" name="password" placeholder="Пароль">
+                  <button type="submit">Войти</button>
+               </form>
+               <a href="#">Забыли пароль?</a>
+               <a href="#">Новая регистрация</a>
+            </div>
+            <div>
+               <a class="shopping-cart-link" href="#">Корзина</a>
+               <table class="shopping-cart-table">
+                  <tr>
+                     <td>
+                        <a class="button">
+                           <img src="img/cross-small.svg" width="11" height="11" alt="Удалить из корзины">
+                        </a>
+                     </td>
+                     <td>
+                        <img src="img/icecream-hit-1-small.jpg" width="33" height="33" alt="Хит-мороженое: сливочное с апельcиновым джемом и цитрусовой стружкой">
+                        <p>Пломбир с апельсиновым джемом</p>
+                     </td>
+                     <td><p>1,5 кг х <span class="cart-price">200 руб.</span></p></td>
+                     <td><p>300 руб.</p></td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="button">
+                           <img src="img/cross-small.svg" width="11" height="11" alt="Удалить из корзины">
+                        </a>
+                     </td>
+                     <td>
+                        <img src="img/icecream-hit-3-small.jpg" width="33" height="33" alt="Хит-мороженое: сливочно-клубничное с присыпкой из белого шоколада">
+                        <p>Клубничный пломбир с присыпкой из белого шоколада</p>
+                     </td>
+                     <td><p>1,5 кг х <span class="cart-price">300 руб.</span></p></td>
+                     <td><p>300 руб.</p></td>
+                  </tr>
+               </table>
+               <p class="cart-total">Итого: 750 руб.</p>
+               <a class="button">Оформить заказ</a>
+            </div>
 			</nav>
 			<p class="timetable">С 10 до 20, ежедневно</p>
 			<p class="phone-number">
@@ -80,7 +122,7 @@
                   </li>
                </ul>
             </fieldset>
-            <button>Применить</button>
+            <button type="submit">Применить</button>
          </form>
          
          <section class="catalog">
@@ -218,43 +260,11 @@
 			</section>
 
 			<div class="footer-copyright">
-				<a class="html-academy-logo" href="https://htmlacademy.ru">
+				<a class="html-academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
                <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy">				
             </a>
 				<p>Сделано в HTML Academy 2017</p>
 			</div>
-		</footer>
-      
-      <section class="cart">
-         <table>
-            <tr>
-               <td><a class="button">x</a></td>
-               <td>
-                  <img src="img/icecream-hit-1-small.jpg" width="33" height="33" alt="Хит-мороженое: сливочное с апельcиновым джемом и цитрусовой стружкой">
-                  <p>Пломбир с апельсиновым джемом</p>
-               </td>
-               <td><p>1,5 кг х <span class="cart-price">200 руб.</span></p></td>
-               <td><p>300 руб.</p></td>
-            </tr>
-            <tr>
-               <td>
-                  <a class="button">
-                     <img src="img/cross-small.svg" width="11" height="11" alt="Удалить из корзины">
-                  </a>
-               </td>
-               <td>
-                  <img src="img/icecream-hit-3-small.jpg" width="33" height="33" alt="Хит-мороженое: сливочно-клубничное с присыпкой из белого шоколада">
-                  <p>Клубничный пломбир с присыпкой из белого шоколада</p>
-               </td>
-               <td><p>1,5 кг х <span class="cart-price">300 руб.</span></p></td>
-               <td><p>300 руб.</p></td>
-            </tr>
-         </table>
-         <p class="cart-total">Итого: 750 руб.</p>
-         <a class="button">Оформить заказ</a>
-      </section>
-      
-      
-      
+		</footer>   
 	</body>
 </html>

@@ -3,6 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Глейси</title>
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet"> 
+      <link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
 		<header class="main-header">
@@ -25,7 +27,7 @@
                <li><a href="about.html">О Компании</a></li>
             </ul>
             <div class="search">
-               <a classs="search-link" href="#">Поиск</a>
+               <a class="search-link" href="#">Поиск</a>
                <form class="search-form" method="post" action="#">
                   <input type="search" name="search" placeholder="Что ищем?">
                </form>
@@ -45,8 +47,7 @@
             </div>
          </nav>
          <div>
-            <p class="timetable">С 10 до 20, ежедневно</p>
-            <p class="phone-number">
+            <p class="timetable">С 10 до 20, ежедневно<br>
                <a href="tel:+78124502525"><b>8 812 450-25-25</b></a>
             </p>
          </div>
@@ -160,8 +161,8 @@
                <b>ул.Большая Конюшенная<br>
                19/8, Санкт-Петербург</b>
             </p>
+            <p> Для заказов по телефону: <p>
             <p>
-               Для заказов по телефону:<br>
                <a href="tel:+78124502525"><b>8 812 450-25-25</b></a><br>
                (с 10 до 20 ежедневно)
             </p>
@@ -195,7 +196,7 @@
                
 					<img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy">
 				</a>
-				<p>Сделано в HTML Academy 2017</p>
+				<p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> 2017</p>
 			</div>
 		</footer>
       
@@ -204,7 +205,7 @@
          <form class="feedback-form" method="post" action="#">
             <input type="text" name="user-name" placeholder="Как вас зовут?">
             <input type="email" name="feedback-email" placeholder="Ваша почта для ответа?">
-            <textarea name="comment">Напишите что-нибудь...</textarea>
+            <textarea name="comment" placeholder="Напишите что-нибудь..."></textarea>
          </form>
       </section>
       

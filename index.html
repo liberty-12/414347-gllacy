@@ -5,9 +5,11 @@
 		<title>HTML Academy: Глейси</title>
       <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet"> 
       <link href="css/style.css" rel="stylesheet">
+<!--      <link href="css/outline.css" rel="stylesheet">-->
 	</head>
 	<body>
 		<header class="main-header">
+         
          <nav class="main-navigation">
             <a class="main-header-logo">
                <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина 'Gllacy'">	
@@ -15,6 +17,7 @@
             <ul class="site-navigation">
                <li>
                   <a href="#">Каталог</a>
+<!--
                   <ul>
                      <li><a href="#">Новинки</a></li>
                      <li><a href="catalog.html">Сливочное</a></li>
@@ -22,32 +25,41 @@
                      <li><a href="#">Фруктовый лед</a></li>
                      <li><a href="#">Мелорин</a></li>
                    </ul>
+-->
                </li>
                <li><a href="shipping-payment.html">Доставка и оплата</a></li>
                <li><a href="about.html">О Компании</a></li>
             </ul>
+				<div class="user-navigation">
             <div class="search">
-               <a class="search-link" href="#">Поиск</a>
+               <a class="search-link" title="Поиск" href="#"></a>
+<!--
                <form class="search-form" method="post" action="#">
                   <input type="search" name="search" placeholder="Что ищем?">
                </form>
+-->
             </div>
             <div class="enter">
-               <a class="enter-link" href="#">Вход</a>
+               <a class="enter-link" title="Вход" href="#">Вход</a>
+<!--
                <form class="enter-form" method="post" action="#">
                   <input type="email" name="enter-email" placeholder="Электронная почта">
                   <input type="password" name="password" placeholder="Пароль">
                   <button type="submit">Войти</button>
+						<a href="#">Забыли пароль?</a>
+               	<a href="#">Новая регистрация</a>
                </form>
-               <a href="#">Забыли пароль?</a>
-               <a href="#">Новая регистрация</a>
+               
+-->
             </div>
-            <div>
-               <a class="shopping-cart-link" href="#">Корзина</a>
+            <div class="shopping-cart">
+               <a class="shopping-cart-link" title="Корзина" href="#">Корзина</a>
+            </div>
             </div>
          </nav>
-         <div>
-            <p class="timetable">С 10 до 20, ежедневно<br>
+         
+         <div class="timetable">
+            <p >С 10 до 20, ежедневно<br>
                <a href="tel:+78124502525"><b>8 812 450-25-25</b></a>
             </p>
          </div>
@@ -56,7 +68,7 @@
 		<main class="container">
          
          <section>
-            <h1 visually-hidden>Фон</h1>
+            <h1 class="visually-hidden">Фон</h1>
             <div class="slider">
                <div class="slider-inner">
                   <div class="slider-slides">
@@ -82,12 +94,12 @@
                <li>
                   <h2>Малинка даром!</h2>
                   <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-                  <a class="button">Хочу варенье!</a>
+                  <a class="button raspberry" href="#">Хочу варенье!</a>
                </li>
                <li>
                   <h2>Шоколадки даром!</h2>
                   <p>При покупке 2 кг любого пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-                  <a class="button">Хочу шоколадки!</a>
+                  <a class="button chocolate" href="#">Хочу шоколадки!</a>
                </li>
             </ul>
 			</section>
@@ -95,28 +107,28 @@
 			<section class="hits">
             <h1 class="visually-hidden">Хиты</h1>
             <ul class="hits-list">
-               <li>
+               <li class="hits-list-item">
                   <a class="hits-item" href="#">
                      <img src="img/icecream-hit-1.jpg" width="267" height="267" alt="Хит-мороженое: сливочное с апельчиновым джемом и цитрусовой стружкой">
                   </a>
                   <p class="hits-price">310<span class="visually-hidden">рублей</span><span class="hits-weight">/кг</span></p>
                   <a class="hits-description" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
                </li>
-               <li>
+               <li class="hits-list-item">
                   <a class="hits-item" href="#">
                      <img src="img/icecream-hit-2.jpg" width="267" height="267" alt="Хит-мороженое: сливочно-кофейное с кусочками шоколада">
                   </a>
                   <p class="hits-price">380<span class="visually-hidden">рублей</span><span class="hits-weight">/кг</span></p>
                   <a class="hits-description" href="#">Сливочно-кофейное с кусочками шоколада</a>
                </li>
-               <li>
+               <li class="hits-list-item">
                   <a class="hits-item" href="#">
                      <img src="img/icecream-hit-3.jpg" width="267" height="267" alt="Хит-мороженое: сливочно-клубничное с присыпкой из белого шоколада">
                   </a>
                   <p class="hits-price">355<span class="visually-hidden">рублей</span><span class="hits-weight">/кг</span></p>
                   <a class="hits-description" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
                </li>
-               <li>
+               <li class="hits-list-item">
                   <a class="hits-item" href="#">
                      <img src="img/icecream-hit-4.jpg" width="267" height="267" alt="Хит-мороженое: сливочное крем-брюле с карамельной подливкой">
                   </a>
@@ -126,31 +138,39 @@
             </ul>
          </section>
          
+			<div class="shop-d-wrapper">
          <section class="shop-description">
             <h1 class="visually-hidden">Описание</h1>
             <b>Магазин Глейси - это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</b>
-            <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий</p>
-            <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-            <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-            <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+				<div class="shop-description-wrapper">
+					<p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий</p>
+					<p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+					<p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+					<p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+				</div>
          </section>
+			</div>
          
+			<div class="block-wrapper">
          <article>
             <p>Новое в нашем блоге</p>
             <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
          </article>
          
          <section class="email">
-            <h1 class="visually-hidden">Подписка</h1>
-            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-            <form class="email-form" method="post" action="#">
-               <input type="email" name="subscribe-email" placeholder="Электронная почта">
-               <button type="submit">Отправить</button>
-            </form>
+				<div class="email-wrapper">
+					<h1 class="visually-hidden">Подписка</h1>
+					<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+					<form class="email-form" method="post" action="#">
+						<input type="email" name="subscribe-email" placeholder="Электронная почта">
+						<button type="submit">Отправить</button>
+					</form>
+				</div>
          </section>
+			</div>
          
          <section class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1510143118029" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1510143118029" width="1200" height="430" frameborder="0" style="border:0" allowfullscreen></iframe>
             <img src="img/map-small.png" width="1200" height="430" alt="Карта">
          </section>
          
@@ -175,16 +195,16 @@
 		<footer class="main-footer">
 			<div class="footer-social">
 				<ul>
-					<li><a class="social-button" href="#">Твиттер</a></li>
-					<li><a class="social-button" href="#">Инстаграм</a></li>
-					<li><a class="social-button" href="#">Фейсбук</a></li>
-					<li><a class="social-button" href="#">Вконтакте</a></li>
+					<li><a class="social social-tw" title="Твиттер" href="#"></a></li>
+					<li><a class="social social-in" title="Инстаграм" href="#"></a></li>
+					<li><a class="social social-fb" title="Фейсбук" href="#"></a></li>
+					<li><a class="social social-vk" title="Вконтакте" href="#"></a></li>
 				</ul>
 			</div>
 
 			<section class="footer-provider-list">
-				<p>Для поставщиков</p>
 				<ul class="footer-provider-items">
+					<li>Для поставщиков</li>
 					<li><a href="production.html">О производстве</a></li>
 					<li><a href="documents.html">Наши документы</a></li>
 					<li><a href="eco-standarts.html">Экологические стандарты</a></li>
@@ -192,11 +212,12 @@
 			</section>
 
 			<div class="footer-copyright">
+				<div class="footer-copyright-wrapper">
 				<a class="html-academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-               
 					<img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy">
 				</a>
 				<p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> 2017</p>
+				</div>
 			</div>
 		</footer>
       
@@ -206,6 +227,7 @@
             <input type="text" name="user-name" placeholder="Как вас зовут?">
             <input type="email" name="feedback-email" placeholder="Ваша почта для ответа?">
             <textarea name="comment" placeholder="Напишите что-нибудь..."></textarea>
+				<button type="submit">Отправить</button>
          </form>
       </section>
       

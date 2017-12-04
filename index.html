@@ -21,15 +21,13 @@
 						<ul class="site-navigation">
 							<li>
 								<a href="#">Каталог</a>
-		<!--
-								<ul>
+								<ul class="submenu">
 									<li><a href="#">Новинки</a></li>
-									<li><a href="catalog.html">Сливочное</a></li>
+									<li><a  href="catalog.html">Сливочное</a></li>
 									<li><a href="#">Щербеты</a></li>
 									<li><a href="#">Фруктовый лед</a></li>
 									<li><a href="#">Мелорин</a></li>
 								 </ul>
-		-->
 							</li>
 							<li><a href="shipping-payment.html">Доставка и оплата</a></li>
 							<li><a href="about.html">О Компании</a></li>
@@ -123,6 +121,7 @@
 								</a>
 								<p class="hits-price">310<span class="visually-hidden">рублей</span><span class="hits-weight">/кг</span></p>
 								<a class="hits-description" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+								<a class="button catalog-button" href="#">Быстрый просмотр</a>
 							</li>
 							<li class="hits-list-item">
 								<a class="hits-item" href="#">
@@ -130,6 +129,7 @@
 								</a>
 								<p class="hits-price">380<span class="visually-hidden">рублей</span><span class="hits-weight">/кг</span></p>
 								<a class="hits-description" href="#">Сливочно-кофейное с кусочками шоколада</a>
+								<a class="button catalog-button" href="#">Быстрый просмотр</a>
 							</li>
 							<li class="hits-list-item">
 								<a class="hits-item" href="#">
@@ -137,6 +137,7 @@
 								</a>
 								<p class="hits-price">355<span class="visually-hidden">рублей</span><span class="hits-weight">/кг</span></p>
 								<a class="hits-description" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+								<a class="button catalog-button" href="#">Быстрый просмотр</a>
 							</li>
 							<li class="hits-list-item">
 								<a class="hits-item" href="#">
@@ -144,6 +145,7 @@
 								</a>
 								<p class="hits-price">415<span class="visually-hidden">рублей</span><span class="hits-weight">/кг</span></p>
 								<a class="hits-description" href="#">Сливочное крем-брюле с карамельной подливкой</a>
+								<a class="button catalog-button" href="#">Быстрый просмотр</a>
 							</li>
 						</ul>
 					</section>
@@ -179,6 +181,7 @@
 					</section>
 					</div>
 
+					<div class="map-wrapper">
 					<section class="map">
 						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1510143118029" width="1200" height="430" frameborder="0" style="border:0" allowfullscreen></iframe>
 						<img src="img/map-small.png" width="1200" height="430" alt="Карта">
@@ -196,8 +199,9 @@
 							<a href="tel:+78124502525"><b>8 812 450-25-25</b></a><br>
 							(с 10 до 20 ежедневно)
 						</p>
-						<a class="button">Форма обратной связи</a>
+						<a class="button feedback-button">Форма обратной связи</a>
 					</section>
+					</div>
 
 
 				</main>
@@ -231,16 +235,22 @@
 					</div>
 				</footer>
 
-				<section class="feedback">
-					<b>Мы обязательно вам ответим!</b>
-					<form class="feedback-form" method="post" action="#">
-						<input type="text" name="user-name" placeholder="Как вас зовут?">
-						<input type="email" name="feedback-email" placeholder="Ваша почта для ответа?">
-						<textarea name="comment" placeholder="Напишите что-нибудь..."></textarea>
-						<button type="submit">Отправить</button>
-					</form>
-				</section>
+				<div class="feedback-wrapper">
+					<section class="feedback feedback-modal">
+						<div class="feedback-header">
+							<b>Мы обязательно вам ответим!</b>
+							<img class="modal-close" src="img/cross-big.svg" width="18" height="17" alt="Закрыть">
+						</div>
+						<form class="feedback-form " method="post" action="#">
+							<input type="text" name="user-name" placeholder="Как вас зовут?">
+							<input type="email" name="feedback-email" placeholder="Ваша почта для ответа?">
+							<textarea name="comment" placeholder="Напишите что-нибудь..."></textarea>
+							<button type="submit">Отправить</button>
+						</form>
+					</section>
+				</div>
 			</div>
-		</div>      
+		</div> 
+		<script src="js/script.js"></script>
 	</body>
 </html>

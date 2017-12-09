@@ -23,7 +23,7 @@ feedbackClose.addEventListener("click", function(evt) {
 	evt.preventDefault();
 	feedbackPopap.classList.remove("modal-show");
 	feedbackOverlay.classList.remove("modal-overlay");
-	feedbackPopap.classList.remove("modal-error");
+	feedbackForm.classList.remove("modal-error");
 });
 
 window.addEventListener("keydown", function(evt) {
@@ -31,7 +31,7 @@ window.addEventListener("keydown", function(evt) {
 		if (feedbackPopap.classList.contains("modal-show")) {
 			feedbackPopap.classList.remove("modal-show");
 			feedbackOverlay.classList.remove("modal-overlay");
-			feedbackPopap.classList.remove("modal-error");
+			feedbackForm.classList.remove("modal-error");
 		}
 	}
 });
@@ -39,7 +39,7 @@ window.addEventListener("keydown", function(evt) {
 feedbackForm.addEventListener("submit", function(evt) {
 	if ( !email.value) {
 		evt.preventDefault();
-		feedbackPopap.classList.add("modal-error");
+		feedbackForm.classList.add("modal-error");
 	} else {
 //		localStorage.setItem("storage-name", name.value);
 		localStorage.setItem("storage-email", email.value);

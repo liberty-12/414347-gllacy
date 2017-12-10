@@ -467,42 +467,6 @@ a.current-link:active {
    font-weight: 700;
 }
 
-/*
-.search-form input::placeholder {
-	font-size: 14px;
-	line-height: 24px;
-	color: #999999;
-	font-weight: 400;
-}
-
-.search-form input::-webkit-input-placeholder {
-	font-size: 14px;
-	line-height: 24px;
-	color: #999999;
-	font-weight: 400;
-}
-
-.search-form input::-moz-placeholder {
-	font-size: 14px;
-	line-height: 24px;
-	color: #999999;
-	font-weight: 400;
-}
-
-.search-form input:-moz-placeholder {
-	font-size: 14px;
-	line-height: 24px;
-	color: #999999;
-	font-weight: 400;
-}
-
-.search-form input:-ms-input-placeholder {
-	font-size: 14px;
-	line-height: 24px;
-	color: #999999;
-	font-weight: 400;
-}
-*/
 
 .search-form input:hover {
    border: 2px solid rgba(154, 154, 154, 0.52);
@@ -550,7 +514,6 @@ a.current-link:active {
    font-size: 14px;
    line-height: 16px;
 	font-weight: 500;
-	
 }
 
 .enter-link::before {
@@ -627,15 +590,6 @@ a.current-link:active {
    color: #323232;
    font-weight: 700;
 }
-
-/*
-.enter-form input::placeholder {
-	font-size: 14px;
-	line-height: 24px;
-	color: #999999;
-	font-weight: 400;
-}
-*/
 
 .enter-form input:hover {
    border: 2px solid rgba(154, 154, 154, 0.52);

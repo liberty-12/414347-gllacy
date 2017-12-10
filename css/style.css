@@ -1043,6 +1043,7 @@ a.current-link:active {
 	width: 194px;
 	height: 37px;
 	padding-left: 15px;
+	
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 15px;
 	
@@ -1052,7 +1053,9 @@ a.current-link:active {
 	font-weight: 500;
 }
 
+.filter-select:hover,
 .filter-select:focus {
+	border-radius: 15px;
 	background-color: rgb(255, 255, 255);
 	color: #000000;
 }
@@ -2007,6 +2010,11 @@ a.pages-current {
 .pages a:hover,
 .pages a:focus {
    background-color: #9db1a5;
+}
+
+.pages a:active {
+	color: #323232;
+   background-color: #ffffff;
 }
 
 a.pages-current:hover,

@@ -1058,6 +1058,7 @@ a.current-link:active {
 .range-left:focus,
 .range-right:focus {
 	cursor: pointer;
+	transform: scale(1.3);
 }
 
 .range-field {
@@ -1645,11 +1646,13 @@ article a:focus {
 .email {
 	margin-top: 40px;
 	margin-left: 26px;
-	position: relative;
+/*	position: relative;*/
 	
 	background-image: url(../img/bg-post.svg);
 	background-repeat: no-repeat;
-	background-position: 0px, 0px;
+	background-position: 0px 0px;
+	background-size: cover;
+	border-radius: 15px;
 	width: 560px;
 	min-height: 219px;
 	
@@ -1657,11 +1660,12 @@ article a:focus {
 }
 
 .email-wrapper {
-	width: 549px;
-	min-height: 211px;
-	position: absolute;
-	top: 4px;
-	left: 5px;
+	min-width: 549px;
+	min-height: 176px;
+	margin: 4px 5px;
+	
+	padding-top: 34px;
+
 	
 	background-color: #f8f7f4;
 	border-radius: 15px;
@@ -1669,7 +1673,9 @@ article a:focus {
 
 .email p{
 	display: block;
-	margin-top: 37px;
+	padding: 0;
+	margin: 0;
+
 	margin-left: 30px;
 	margin-right: 25px;
 	margin-bottom: 41px;

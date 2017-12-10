@@ -593,7 +593,7 @@ a.current-link:active {
 	display: none;
 	
 	position: absolute;
-	top: 37px;
+	top: 39px;
 	right: 0;
 	z-index: 1000;
 	
@@ -842,8 +842,8 @@ a.current-link:active {
 	color: #000000;
 }
 
-.shopping-cart:hover > a::before,
-.shopping-cart:focus > a::before {
+.index-page .shopping-cart:hover > a::before,
+.index-page .shopping-cart:focus > a::before {
 	content: "";
 
 	position: absolute;
@@ -2439,40 +2439,6 @@ a.pages-current:focus {
 .modal-error input {
 	border-color: #ff0000;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

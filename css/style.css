@@ -25,7 +25,7 @@ img {
 	box-sizing: border-box;
 
 	margin: 0 auto;
-	padding: 0 2.25%;
+	padding: 0 27px;
 
 	width: 1200px;
 }
@@ -281,6 +281,7 @@ input[type="radio"].visually-hidden {
 	    flex-wrap: wrap;
 	
 	margin: 0;
+	margin-left: 10px;
 	padding: 0;
 	width: 381px;
 
@@ -289,7 +290,7 @@ input[type="radio"].visually-hidden {
 
 .site-navigation a {
 	display: block;
-	margin: 14px 13px;
+	margin: 14px 14px;
 	padding: 7px 0;
 
 	border-radius: 50px;
@@ -452,7 +453,7 @@ a.current-link:active {
 	width: 33px;
 	height: 33px;
 	margin-left: auto;
-	margin-right: 10px;
+	margin-right: 9px;
 
 	background-color: rgba(255, 255, 255, 0.2);
 	background-image: url(../img/loupe.svg);
@@ -784,7 +785,7 @@ a.current-link:active {
 
 .shopping-cart {
 	position: relative;
-	margin-left: 10px;
+	margin-left: 9px;
 
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 20px;
@@ -1048,17 +1049,17 @@ a.breadcrumbs-current {
 
 .select-div label{
 	display: block;
-	margin-left: 13px;
+	margin-left: 16px;
 	margin-bottom: 7px;
 }
 
 .filter-select {
 	width: 194px;
 	height: 37px;
-	padding-left: 15px;
+	padding-left: 11px;
 
 	background-color: rgba(255, 255, 255, 0.2);
-	border-radius: 15px;
+	border-radius: 50px;
 
 	color: #ffffff;
 	font-size: 16px;
@@ -1086,11 +1087,11 @@ a.breadcrumbs-current {
 
 .range {
 	width: 220px;
-	height: 37px;
+	height: 34px;
 	position: relative;
 
 	background-color: rgba(255, 255, 255, 0.2);
-	border-radius: 15px;
+	border-radius: 50px;
 }
 
 .filter-range {
@@ -1125,11 +1126,11 @@ a.breadcrumbs-current {
 }
 
 .range-left {
-	left: 23px;
+	left: 13px;
 }
 
 .range-right {
-	right: 53px;
+	right: 45px;
 }
 
 .range-left:hover,
@@ -1161,6 +1162,10 @@ a.breadcrumbs-current {
 fieldset legend {
 	margin-bottom: 7px;
 	margin-left: 15px;
+}
+
+.filler legend {
+	margin-bottom: 6px;
 }
 
 .filter ul {
@@ -1202,7 +1207,11 @@ fieldset legend {
 	padding-right: 10px;
 
 	font-size: 16px;
-	line-height: 18px;
+	line-height: 14px;
+}
+
+.fatness .filter-option {
+	padding-left: 37px;
 }
 
 .filler .filter-option {
@@ -1301,8 +1310,8 @@ fieldset legend {
 
 .filter-button {
 	display: inline-block;
-	padding: 9px 30px;
-	margin-left: 15px;
+	padding: 7px 30px;
+	margin-left: 12px;
 
 	background: rgba(255, 255, 255, 0.2);
 	border: 2px solid #ffffff;
@@ -1410,7 +1419,7 @@ fieldset legend {
 .button.raspberry{
 	display: inline-block;
 
-	padding: 10px 20px;
+	padding: 10px 23px;
 
 	margin-left: auto;
 	margin-top: 43px;
@@ -1428,9 +1437,9 @@ fieldset legend {
 
 	padding: 10px 20px;
 
-	margin-top: 20px;
+	margin-top: 23px;
 	margin-bottom: 22px;
-	margin-right: 20px;
+	margin-right: 23px;
 	margin-left: auto;
 
 	color: #ffffff;
@@ -1474,7 +1483,7 @@ fieldset legend {
 .catalog-list-item {	
 	position: relative;
 
-	margin-right: 20px;
+	margin-right: 22px;
 	margin-bottom: 26px;
 	padding-bottom: 3px;
 
@@ -1840,7 +1849,7 @@ article a:focus {
 
 	padding: 0;
 	margin: 0;
-	margin-left: 25px;
+	margin-left: 22px;
 	margin-right: 22px;
 	margin-bottom: 36px;
 
@@ -1852,9 +1861,9 @@ article a:focus {
 .email-form input {
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
-	margin-left: 25px;
+	margin-left: 22px;
 	margin-right: 11px;
-	padding-left: 15px;
+	padding-left: 13px;
 
 	width: 367px;
 	height: 44px;
@@ -2019,7 +2028,7 @@ iframe {
 }
 
 .contacts .button {
-	padding: 10px 25px;
+	padding: 10px 28px;
 	margin: 0;
 	margin-top: 28px;
 	margin-left: 25px;
@@ -2039,6 +2048,8 @@ iframe {
 }
 
 .pages {
+	position: relative;
+	right: -11px;
 	margin: 0;
 	margin-bottom: 50px;
 	padding: 0;
@@ -2058,6 +2069,7 @@ iframe {
 	display: inline-block;
 	width: 27px;
 	height: 26px;
+	
 	border-radius: 50%;
 
 	font-size: 16px;
@@ -2098,8 +2110,13 @@ a.pages-current:focus {
 	    -ms-flex-align: start;
 	        align-items: flex-start;
 	justify-content: space-between;
+	width: 1156px;
 	margin-top: 10px;
 	margin-bottom: 20px;
+}
+
+.index-page .main-footer {
+	width: 1166px;
 }
 
 .footer-social ul{
@@ -2225,6 +2242,11 @@ a.pages-current:focus {
 			  justify-content: flex-end;
 	min-width: 307px;
 	margin-right: 8px;
+	margin-left: 11px;
+}
+
+.index-page .footer-copyright {
+	margin-left: 21px;
 }
 
 .copyright-wrapper {

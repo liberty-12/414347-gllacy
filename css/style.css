@@ -1,18 +1,18 @@
 body {
-   margin: 0;
-   padding: 0;
-   
-   font-size: 16px;
-   font-weight: 400;
-   line-height: 22px;
-   color: #ffffff;
-   font-family: "Roboto", "Arial", sans-serif;
-  
+	margin: 0;
+	padding: 0;
+
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
+	color: #ffffff;
+	font-family: "Roboto", "Arial", sans-serif;
+
 	background-color: #849d8f;
 }
 
 a {
-   text-decoration: none;
+	text-decoration: none;
 }
 
 img {
@@ -43,7 +43,7 @@ img {
 	background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
 	border-radius: 50px;
 	-webkit-box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
-	        box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+			  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 	border: none;
 
 	cursor: pointer;
@@ -92,18 +92,17 @@ input[type="radio"].visually-hidden {
 	background-image: url("../img/icecream-background-1.png");
 	background-repeat: no-repeat;
 	background-position: top center;
-	
+
 	-webkit-transition: background-image 0.5s ease, background-color 0.5s ease;
-	
+
 	-o-transition: background-image 0.5s ease, background-color 0.5s ease;
-	
+
 	transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
 .site-wrapper::before,
 .site-wrapper::after {
 	content: "";
-
 	visibility: hidden;
 }
 
@@ -276,14 +275,13 @@ input[type="radio"].visually-hidden {
 	display: -ms-flexbox;
 	display: flex;
 	width: 100%;
-	
-   font-size: 14px;
-   font-weight: 500;
-   line-height: 16px;
+
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 16px;
 }
 
 .main-header-logo {
-	
 	margin-left: 27px;
 }
 
@@ -298,7 +296,6 @@ input[type="radio"].visually-hidden {
 	margin-left: 27px;
 	padding: 0;
 	width: 381px;
-
    
    list-style: none;
 }
@@ -366,7 +363,6 @@ a.current-link:active {
 	margin: 0;
 	padding: 0;
 	
-	
 	width: 143px;
 	min-height: 171px;
 	
@@ -379,7 +375,6 @@ a.current-link:active {
 	
 	border-top: 1px solid rgba(255, 255, 255, 0);
 }
-
 
 .submenu a {
 	display: block;
@@ -515,7 +510,6 @@ a.current-link:active {
    color: #323232;
    font-weight: 700;
 }
-
 
 .search-form input:hover {
    border: 2px solid rgba(154, 154, 154, 0.52);
@@ -690,7 +684,6 @@ a.current-link:active {
 
 .enter-links a:hover,
 .enter-links a:focus {
-	
 	color: #e84d37;
 	-webkit-text-decoration: underline rgba(236, 80, 69, 0.3);
 	        text-decoration: underline rgba(236, 80, 69, 0.3);
@@ -848,6 +841,31 @@ a.current-link:active {
 	background-position: 0 0;
 }
 
+.shopping-cart:hover,
+.shopping-cart:focus {
+   background-color: rgba(255, 255, 255, 1);
+}
+
+.shopping-cart:hover > a,
+.shopping-cart:focus > a {
+	color: #000000;
+}
+
+.shopping-cart:hover > a::before,
+.shopping-cart:focus > a::before {
+	content: "";
+
+	position: absolute;
+	top: 6px;
+	left: 16px;
+	width: 21px;
+	height: 19px;
+	
+	background-image: url(../img/basket-black.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
 .inner-page .shopping-cart-link::before {	
 	background-image: url(../img/basket-red.svg);
 }
@@ -963,10 +981,13 @@ a.current-link:active {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	
 	margin: 0;
 	margin-left: 27px;
 	padding: 0;
+	
 	width: 267px;
+	
    list-style: none;
 }
 
@@ -1032,8 +1053,7 @@ a.current-link:active {
 }
 
 .filter-select:focus {
-	background-color: rgba(255, 255, 255);
-	
+	background-color: rgb(255, 255, 255);
 	color: #000000;
 }
 
@@ -1133,13 +1153,12 @@ fieldset legend {
    margin: 0;
 	
 	display: -webkit-box;
-	
 	display: -ms-flexbox;
-	
 	display: flex;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
+	
 	min-height: 37px;
 	
 	background-color: rgba(255, 255, 255, 0.2);
@@ -1302,10 +1321,9 @@ fieldset legend {
    padding: 0;
    
    display: -webkit-box;
-   
    display: -ms-flexbox;
-   
    display: flex;
+	
    -webkit-box-pack: justify;
        -ms-flex-pack: justify;
            justify-content: space-between;
@@ -1323,9 +1341,9 @@ fieldset legend {
    width: 560px;
    min-height: 230px;
    
-   border-top: 1px solid rgba(255, 255, 255, 0);
-   
+   border-top: 1px solid rgba(255, 255, 255, 0);  
 }
+
 .present-items li:last-child {
 	margin-right: 26px;
 	
@@ -1336,8 +1354,7 @@ fieldset legend {
    width: 560px;
    min-height: 230px;
    
-   border-top: 1px solid rgba(255, 255, 255, 0);
-   
+   border-top: 1px solid rgba(255, 255, 255, 0);  
 }
 
 .present-items h2 {
@@ -1463,6 +1480,8 @@ fieldset legend {
 	display: none;
 
 	content: "";
+	
+	padding-bottom: 20px;
 
 	position: absolute;
 	top: -10px;
@@ -1479,17 +1498,13 @@ fieldset legend {
 
 	cursor: pointer;
 
-
 	-webkit-box-shadow: 0 20px 20px rgba(50, 50, 50, 0.3);
-
-
 	        box-shadow: 0 20px 20px rgba(50, 50, 50, 0.3);
-	padding-bottom: 20px;
 }
 
 .catalog-item-block {
-  position: relative;
-  z-index: 11;
+	position: relative;
+	z-index: 11;
 }
 
 .catalog-button {
@@ -1581,13 +1596,13 @@ a.catalog-item-description:focus{
 }
 
 .shop-description {	
-	background-image: url(../img/waffle-bg.jpg);
-	background-repeat: repeat-x;
-	border-radius: 20px;
    width: 1146px;
    min-height: 306px;
 	margin-left: 26px;
-   
+	
+	background-image: url(../img/waffle-bg.jpg);
+	background-repeat: repeat-x;
+	border-radius: 20px;
    border-top: 1px solid rgba(255, 255, 255, 0);
 	
    color: #323232;
@@ -1753,7 +1768,6 @@ article a:focus {
 	margin: 4px 5px;
 	
 	padding-top: 34px;
-
 	
 	background-color: #f8f7f4;
 	border-radius: 15px;
@@ -2032,7 +2046,6 @@ a.pages-current:focus {
 	margin-bottom: 1px;
 	
 	-webkit-box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
-	
 	        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
 	
 	opacity: 0.8;
@@ -2080,7 +2093,6 @@ a.pages-current:focus {
 	position: relative;
 	
 	-webkit-text-decoration: underline rgba(255, 255, 255, 0.2);
-	
 	        text-decoration: underline rgba(255, 255, 255, 0.2);
 }
 
@@ -2104,7 +2116,6 @@ a.pages-current:focus {
    color: #ffffff;
 	
 	-webkit-text-decoration: underline rgba(255, 255, 255, 0.2);
-	
 	        text-decoration: underline rgba(255, 255, 255, 0.2);
 }
 
@@ -2118,7 +2129,6 @@ a.pages-current:focus {
    color: #ffbc9e;
 	
 	-webkit-text-decoration: underline rgba(249, 172, 159, 0.3);
-	
 	        text-decoration: underline rgba(249, 172, 159, 0.3);
 }
 
@@ -2347,20 +2357,8 @@ a.pages-current:focus {
 	z-index: 10;
 }
 
-/*
-@keyframes shake {
-	0%, 100% {transform: translateX(0);}
-	10%, 30%, 50%, 70%, 90% {transform: translateX(-5px);}
-	20%, 40%, 60%, 80% {transform: translateX(5px);}
-}
-*/
-
 .modal-error input {
 	border-color: #ff0000;
-/*
-	animation-name: shake;
-	animation-duration: 0.6s;
-*/
 }
 
 

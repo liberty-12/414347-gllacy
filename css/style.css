@@ -21,8 +21,12 @@ img {
 }
 
 
-.wrapper {
+.site-wrapper {
+	box-sizing: border-box;
+	
 	margin: 0 auto;
+	padding: 0 2.3%;
+	
 	width: 1200px;
 }
 
@@ -86,7 +90,7 @@ input[type="radio"].visually-hidden {
 	overflow: hidden;
 }
 
-.site-wrapper {
+.index-page {
 	width: 100%;
 	background-color: #849d8f;
 	background-image: url("../img/icecream-background-1.png");
@@ -94,34 +98,26 @@ input[type="radio"].visually-hidden {
 	background-position: top center;
 
 	-webkit-transition: background-image 0.5s ease, background-color 0.5s ease;
-
-	-o-transition: background-image 0.5s ease, background-color 0.5s ease;
-
-	transition: background-image 0.5s ease, background-color 0.5s ease;
+	     -o-transition: background-image 0.5s ease, background-color 0.5s ease;
+			  transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
-.site-wrapper::before,
-.site-wrapper::after {
+.wrapper::before,
+.wrapper::after {
 	content: "";
 	visibility: hidden;
 }
 
-.site-wrapper::before {
+.wrapper::before {
 	background-image: url("../img/icecream-background-2.png");
 }
 
-.site-wrapper::after {
+.wrapper::after {
 	background-image: url("../img/icecream-background-3.png");
 }
 
 .container {
-/*
-	width: 900px;
-	width: 1200px;
-*/
-	
 	margin: 0 auto;
-/*	padding: 0 20px;*/
 }
 
 .slider {
@@ -221,40 +217,36 @@ input[type="radio"].visually-hidden {
 	cursor: pointer;
 }
 
-.slider-controls label:first-child {
-	margin-left: 27px;
-}
-
-#product-1:checked ~ .site-wrapper {
+#product-1:checked ~ .wrapper {
 	background-color: #849d8f;
 	background-image: url("../img/icecream-background-1.png");
 }
 
-#product-2:checked ~ .site-wrapper {
+#product-2:checked ~ .wrapper {
 	background-color: #8996a6;
 	background-image: url("../img/icecream-background-2.png");
 }
 
-#product-3:checked ~ .site-wrapper {
+#product-3:checked ~ .wrapper {
 	background-color: #9d8b84;
 	background-image: url("../img/icecream-background-3.png");
 }
 
-#product-1:checked ~ .site-wrapper #slide1,
-#product-2:checked ~ .site-wrapper #slide2,
-#product-3:checked ~ .site-wrapper #slide3 {
+#product-1:checked ~ .wrapper #slide1,
+#product-2:checked ~ .wrapper #slide2,
+#product-3:checked ~ .wrapper #slide3 {
 	display: block;
 }
 
-#product-1:checked ~ .site-wrapper label[for="product-1"],
-#product-2:checked ~ .site-wrapper label[for="product-2"],
-#product-3:checked ~ .site-wrapper label[for="product-3"] {
+#product-1:checked ~ .wrapper label[for="product-1"],
+#product-2:checked ~ .wrapper label[for="product-2"],
+#product-3:checked ~ .wrapper label[for="product-3"] {
 	background-color: #ffffff;
 }
 
-#product-1:hover ~ .site-wrapper label[for="product-1"],
-#product-2:hover ~ .site-wrapper label[for="product-2"],
-#product-3:hover ~ .site-wrapper label[for="product-3"] {
+#product-1:hover ~ .wrapper label[for="product-1"],
+#product-2:hover ~ .wrapper label[for="product-2"],
+#product-3:hover ~ .wrapper label[for="product-3"] {
 	background-color: rgba(255, 255, 255, 0.4);
 	cursor: pointer;
 }
@@ -281,10 +273,6 @@ input[type="radio"].visually-hidden {
 	line-height: 16px;
 }
 
-.main-header-logo {
-	margin-left: 27px;
-}
-
 .site-navigation{
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -293,7 +281,6 @@ input[type="radio"].visually-hidden {
 	    flex-wrap: wrap;
 	
 	margin: 0;
-	margin-left: 27px;
 	padding: 0;
 	width: 381px;
    
@@ -453,7 +440,6 @@ a.current-link:active {
 	        align-items: center;
 	
 	margin-left: auto;
-	margin-right: 27px;
 	max-width: 267px;
 }
 
@@ -951,7 +937,6 @@ a.current-link:active {
 	-ms-flex-item-align: end;
 	    align-self: flex-end;
 	margin: 0;
-	margin-right: 27px;
 	padding: 0;
 	
    font-size: 14px;
@@ -983,7 +968,6 @@ a.current-link:active {
 	display: flex;
 	
 	margin: 0;
-	margin-left: 27px;
 	padding: 0;
 	
 	width: 267px;
@@ -1002,8 +986,6 @@ a.current-link:active {
 }
 
 .page-header {
-	margin-left: 27px;
-	
 	font-size: 35px;
 	line-height: 41px;
 }
@@ -1019,7 +1001,6 @@ a.current-link:active {
 	        align-items: center;
 	
 	width: 880px;
-	margin-left: 27px;
 	margin-bottom: 33px;
 	
    font-size: 14px;
@@ -1335,8 +1316,6 @@ fieldset legend {
 }
 
 .present-items li:first-of-type {
-	margin-left: 26px;
-	
    background-image: url(../img/raspberry-background.png);
    background-repeat: no-repeat;
 	background-size: cover;
@@ -1348,7 +1327,7 @@ fieldset legend {
 }
 
 .present-items li:last-child {
-	margin-right: 26px;
+	margin-left: 26px;
 	
    background-image: url(../img/chocolate-background.png);
    background-repeat: no-repeat;
@@ -1446,7 +1425,6 @@ fieldset legend {
 .catalog-items {
 	width: 1200px;
 	margin: auto;
-	margin-left: 25px;
 	padding: 0;
 }
 
@@ -1454,7 +1432,7 @@ fieldset legend {
 .catalog-list-item {	
 	position: relative;
 
-	margin-right: 26px;
+	margin-right: 27px;
 	margin-bottom: 28px;
 	padding-bottom: 3px;
 
@@ -1599,12 +1577,12 @@ a.catalog-item-description:focus{
 }
 
 .shop-description {	
-   width: 1146px;
+   width: 100%;
    min-height: 306px;
-	margin-left: 26px;
 	
 	background-image: url(../img/waffle-bg.jpg);
 	background-repeat: repeat-x;
+	background-size: cover;
 	border-radius: 20px;
    border-top: 1px solid rgba(255, 255, 255, 0);
 	
@@ -1708,7 +1686,6 @@ a.catalog-item-description:focus{
 
 article {
 	margin-top: 40px;
-	margin-left: 26px;
 	background-image: url(../img/article-background.png);
 	background-repeat: no-repeat;
 	width: 560px;
@@ -1892,7 +1869,7 @@ article a:focus {
 }
 
 iframe {
-	width: 1200px;
+	width: 100%;
 	height: 430px;
 	
 	background-image: url("../img/map.png");
@@ -2039,7 +2016,6 @@ a.pages-current:focus {
 	display: flex;
 	width: 258px;
 	margin: 0;
-	margin-left: 27px;
    padding: 0;
 	
    list-style: none;

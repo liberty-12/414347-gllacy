@@ -504,13 +504,13 @@ a.current-link:active {
 
 .search-form input:hover {
 	border: 2px solid rgba(154, 154, 154, 0.52);
-	padding-left: 12px;
+	padding-left: 14px;
 }
 
 .search-form input:focus {
 	outline: none;
 	border: 2px solid rgba(46, 136, 228, 0.52);
-	padding-left: 13px;
+	padding-left: 14px;
 }
 
 .search:hover,
@@ -630,13 +630,13 @@ a.current-link:active {
 
 .enter-form input:hover {
 	border: 2px solid rgba(154, 154, 154, 0.52);
-	padding-left: 13px;
+	padding-left: 14px;
 }
 
 .enter-form input:focus {
 	outline: none;
 	border: 2px solid rgba(46, 136, 228, 0.52);
-	padding-left: 13px;
+	padding-left: 14px;
 }
 
 .enter-wrapper {
@@ -779,6 +779,7 @@ a.current-link:active {
 .enter-form input[type="email"]:hover,
 .enter-form input[type="password"]:hover {
 	border: 2px solid rgba(154, 154, 154, 0.52);
+	padding-left: 14px;
 }
 
 .search-form input:focus,
@@ -786,6 +787,7 @@ a.current-link:active {
 .enter-form input[type="password"]:focus {
 	outline: none;
 	border: 2px solid rgba(46, 136, 228, 0.52);
+	padding-left: 14px;
 }
 
 .shopping-cart {
@@ -1688,6 +1690,15 @@ fieldset legend {
 	text-align: center;
 }
 
+.description-width {
+	margin: 0 auto;
+	width: 200px;
+}
+
+.description-width:last-of-type {
+	margin-top: 3px;
+}
+
 a.hits-description:hover,
 a.hits-description:focus,
 a.catalog-item-description:hover,
@@ -2497,7 +2508,7 @@ a.pages-current:focus {
 .feedback-form input:hover,
 .feedback-form textarea:hover {
 	border: 2px solid rgba(154, 154, 154, 0.52);
-	padding-left: 13px;
+	padding-left: 14px;
 }
 
 .feedback-form textarea:hover {
@@ -2508,7 +2519,7 @@ a.pages-current:focus {
 .feedback-form textarea:focus {
 	outline: none;
 	border: 2px solid rgba(46, 136, 228, 0.52);
-	padding-left: 13px;
+	padding-left: 14px;
 }
 
 .feedback-form .button-class {

@@ -1714,7 +1714,8 @@ a.catalog-item-description:focus{
 	background-color: #ece0c4;
 	background-image: url(../img/waffle-bg.jpg);
 	background-repeat: repeat;
-	background-size: cover;
+	background-position: 0 0;
+	background-size: auto;
 	border-radius: 20px;
 	border-top: 1px solid rgba(255, 255, 255, 0);
 
@@ -1789,6 +1790,7 @@ a.catalog-item-description:focus{
 	    -ms-flex-order: 1;
 	        order: 1;
 	margin-right: 29px;
+	margin-bottom: 24px;
 }
 
 .shop-description p:nth-of-type(2)::before {
@@ -1801,6 +1803,7 @@ a.catalog-item-description:focus{
 	-webkit-box-ordinal-group: 7;
 	    -ms-flex-order: 6;
 	        order: 6;
+	margin-bottom: 46px;
 }
 
 .shop-description p:nth-of-type(4)::before {

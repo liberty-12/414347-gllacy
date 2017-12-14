@@ -1067,10 +1067,7 @@ a.breadcrumbs-current {
 
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 50px;
-	
-	-webkit-appearance: none;
-		-moz-appearance: none;
-			  appearance: none;
+	border: none;
 
 	color: #ffffff;
 	font-size: 16px;
@@ -1080,6 +1077,7 @@ a.breadcrumbs-current {
 .filter-select:hover,
 .filter-select:focus {
 	border-radius: 50px;
+	border: none;
 	background-color: rgb(255, 255, 255);
 	color: #000000;
 }
